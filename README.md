@@ -46,15 +46,15 @@ El Diagrama de Contexto describe el ecosistema de datos de **DataCo**, mostrando
 ### Diagrama C2 – ContenedoreS
 Este diagrama muestra la arquitectura de datos de DataCo en Azure, detallando los contenedores principales y su interacción:
 
-**Fuentes externas:**
+* **Fuentes externas:**
 
-* SAP (Ventas) – exporta facturas y pedidos en CSV/JSON cada 4h.
+  * SAP (Ventas) – exporta facturas y pedidos en CSV/JSON cada 4h.
 
-* Oracle (Inventario) – envía movimientos de stock y fechas de vencimiento.
+  * Oracle (Inventario) – envía movimientos de stock y fechas de vencimiento.
 
-* GPS Flota – exporta rutas y tiempos de entrega en CSV.
+  * GPS Flota – exporta rutas y tiempos de entrega en CSV.
 
-* Salesforce CRM – provee acuerdos y cartera vía API cada 4h.
+  * Salesforce CRM – provee acuerdos y cartera vía API cada 4h.
 
 * **Azure Data Factory:** Orquesta la ingesta de datos desde las cuatro fuentes hacia el Data Lake, con ejecución programada cada 4h.
 
