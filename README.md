@@ -43,3 +43,25 @@ El Diagrama de Contexto describe el ecosistema de datos de **DataCo**, mostrando
 * **Gobierno:** El Auditor supervisa la trazabilidad y calidad de los datos directamente en el sistema central.
 
 ---
+**Diagrama C2 – Contenedores**
+Este diagrama muestra la arquitectura de datos de DataCo en Azure, detallando los contenedores principales y su interacción:
+
+**Fuentes externas:**
+
+SAP (Ventas) – exporta facturas y pedidos en CSV/JSON cada 4h.
+
+Oracle (Inventario) – envía movimientos de stock y fechas de vencimiento.
+
+GPS Flota – exporta rutas y tiempos de entrega en CSV.
+
+Salesforce CRM – provee acuerdos y cartera vía API cada 4h.
+
+**Azure Data Factory:** Orquesta la ingesta de datos desde las cuatro fuentes hacia el Data Lake, con ejecución programada cada 4h.
+
+**Data Lake Storage Gen2:** Almacén de datos crudos (RAW: CSV/JSON) y procesados (Curated: Parquet).
+
+**Azure Databricks:** Realiza limpieza, estandarización, eliminación de duplicados y enriquecimiento de datos usando Spark.
+
+**Azure SQL Database:** Almacén relacional consolidado, optimizado para consultas analíticas.
+
+**Power BI Desktop:** Visualización de dashboards ejecutivos, actualizados automáticamente cada 4h.
