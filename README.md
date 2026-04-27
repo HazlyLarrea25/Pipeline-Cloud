@@ -68,7 +68,7 @@ Este diagrama muestra la arquitectura de datos de DataCo en Azure, detallando lo
 ### Diagrama C3 - Componente Azure Databricks
 El propósito de este diagrama es mostrar la estructura interna de un contenedor, identificando sus componentes principales, responsabilidades y las relaciones entre ellos, así como sus dependencias con otros sistemas o bases de datos.
 
-![Diagrama C3]('./assets/Diagrama C3 Databricks.jpg')
+![Diagrama C3](./assets/Diagrama%20C3%20Databricks.jpg)
 
 Azure Databricks Workspace:
 
