@@ -63,3 +63,24 @@ Este diagrama muestra la arquitectura de datos de DataCo en Azure, detallando lo
 * **Azure SQL Database:** Almacén relacional consolidado, optimizado para consultas analíticas.
 
 * **Power BI Desktop:** Visualización de dashboards ejecutivos, actualizados automáticamente cada 4h.
+
+---
+### Diagrama C3 - Componente Azure Databricks
+El propósito de este diagrama es mostrar la estructura interna de un contenedor, identificando sus componentes principales, responsabilidades y las relaciones entre ellos, así como sus dependencias con otros sistemas o bases de datos.
+
+![Diagrama C3](./assets/Diagrama C3 Databricks.jpg)
+
+Azure Databricks Workspace:
+
+* ingest_sap.py: Notebook encargado de extraer información desde SAP y almacenarla en la capa inicial del Data Lake.
+* clean_inventory.py: Notebook que depura y estandariza los datos de inventario, corrigiendo inconsistencias y preparando la información para siguientes etapas.
+* enrich_deliveries.py: Notebook que complementa los datos de entregas con reglas de negocio, catálogos u otras fuentes adicionales.
+* load_warehouse.py: Notebook responsable de cargar la información final procesada hacia la base de datos analítica.
+
+Azure Data Lake Storage Gen2: Repositorio central de archivos y datos, organizado en capas:
+* Bronze: Datos crudos o sin procesar.
+* Silver: Datos limpios y estructurados.
+* Gold: Datos refinados y listos para consumo de negocio.
+
+Azure SQL Database: Base de datos relacional donde se almacenan los datos consolidados para consultas, reportes e indicadores.
+
