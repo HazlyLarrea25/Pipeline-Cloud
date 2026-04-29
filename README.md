@@ -56,13 +56,12 @@ Este diagrama muestra la arquitectura de datos de DataCo en Azure, detallando lo
   * Salesforce CRM – provee acuerdos y cartera vía API cada 4h.
 
 * **Azure Data Factory:** Orquesta la ingesta de datos desde las cuatro fuentes hacia el Data Lake, con ejecución programada cada 4h.
-* **Data Lake Storage Gen2:** Almacén de datos crudos (RAW: CSV/JSON) y procesados (Curated: Parquet).
+* **Data Lake Storage Gen2:** Almacenamiento de datos crudos (RAW: CSV/JSON) y procesados (Curated: Parquet).
 
 * **Azure Databricks:** Realiza limpieza, estandarización, eliminación de duplicados y enriquecimiento de datos usando Spark.
 
 * **Azure SQL Database:** Almacén relacional consolidado, optimizado para consultas analíticas.
 
-* **Power BI Desktop:** Visualización de dashboards ejecutivos, actualizados automáticamente cada 4h.
 
 ---
 ### Diagrama C3 - Componente Azure Databricks
