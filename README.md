@@ -46,7 +46,7 @@ El Diagrama de Contexto describe el ecosistema de datos de **DataCo**, mostrando
 ### Diagrama C2 - Contenedores
 Este diagrama muestra la arquitectura de datos de DataCo en Azure, detallando los contenedores principales y su interacción:
 
-![Diagrama C2](assets/Diagrama%20C2.jpg)
+![Diagrama C2](assets/Diagrama%20C2(1).jpg)
 
 * **Fuentes externas:**
 
