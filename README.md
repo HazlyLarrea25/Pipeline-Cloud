@@ -31,7 +31,7 @@ Diseño e implementación de un pipeline de datos en Azure para **DataCo**, una 
 ### Diagrama C1 - Contexto
 El Diagrama de Contexto describe el ecosistema de datos de **DataCo**, mostrando cómo la solución propuesta interactúa con las fuentes de información existentes y los usuarios finales.
 
-![Diagrama de Contexto C1](./assets/Diagrama_C1.jpg)
+![Diagrama de Contexto C1](assets/Diagrama_C1.jpg)
 
 **Interacciones Clave:**
 * **Sistemas Externos (Fuentes):** Se ingesta información de SAP (Ventas), Oracle (Inventario), Salesforce (CRM) y GPS (Logística).
@@ -43,7 +43,7 @@ El Diagrama de Contexto describe el ecosistema de datos de **DataCo**, mostrando
 ### Diagrama C2 - Contenedores
 Este diagrama muestra la arquitectura de datos de DataCo en Azure, detallando los contenedores principales y su interacción:
 
-![Diagrama C2](./assets/Diagrama_C2.jpg)
+![Diagrama C2](assets/Diagrama_C2.jpg)
 
 * **Fuentes externas:**
 
@@ -64,7 +64,7 @@ Este diagrama muestra la arquitectura de datos de DataCo en Azure, detallando lo
 ### Diagrama C3 - Componentes
 El propósito de este diagrama es mostrar la estructura interna de un contenedor, identificando sus componentes principales, responsabilidades y las relaciones entre ellos, así como sus dependencias con otros sistemas o bases de datos.
 
-![Diagrama C3](./assets/Diagrama_C3.jpg)
+![Diagrama C3](assets/Diagrama_C3.jpg)
 
 Azure Data Factory:
 
